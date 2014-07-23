@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_window_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/actTitle"
+                android:layout_width="265.0dip"
+                android:layout_height="35.0dip"
+                android:background="@drawable/foldertitle" />
+
+            <TextView
+                android:id="@+id/Ctext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom"
+                android:textColor="#ffffffff"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/finishBtn"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/close"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="265.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/window"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/app_wall"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5.0dip"
+                android:columnWidth="48.0dip"
+                android:horizontalSpacing="8.0dip"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
